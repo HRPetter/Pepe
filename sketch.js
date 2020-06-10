@@ -59,7 +59,7 @@ function draw() {
 
 function keyPressed() { // it checks for up arrow being pressed and turns looping on and off
 
-  if (keyCode == UP_ARROW) {  // stop when Up Arrow  is pressed
+  if (keyCode == '80') {  // stop when P  is pressed
     if (islooping) {
       noLoop();
       islooping = false; // turned off looping
