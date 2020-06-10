@@ -1,9 +1,13 @@
-let bg;
+let lli;
 let islooping = true ;
 
 var npos = 100;
 var x = new Array (npos);
 var y = new Array (npos);
+  
+function preload() {
+    lli = loadImage('lli_comp.jpg');
+}
 
 function setup() {
   createCanvas(700,700);
@@ -14,8 +18,8 @@ function setup() {
 function innit() { // initialises the drawing
   //noLoop() ;
   frameCount=0 ;
-  
-    background(1);
+
+  image(lli, 0, 0);
   stroke(7,7,7); 
 
 }
@@ -24,7 +28,8 @@ function innit() { // initialises the drawing
 function draw() {
   if (this._loop) { // draws when loop is active
     var size = 50;
-    background(100);
+    image(lli, 0, 0);
+  
     
   
     size = constrain(frameCount, 0, 100);
@@ -52,7 +57,7 @@ function draw() {
    }
  }
 
-function keyPressed() { // it checks for spacebar being pressed and turns looping on and off
+function keyPressed() { // it checks for up arrow being pressed and turns looping on and off
 
   if (keyCode == UP_ARROW) {  // stop when Up Arrow  is pressed
     if (islooping) {
