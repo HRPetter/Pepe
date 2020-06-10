@@ -1,7 +1,7 @@
 let lli;
 let islooping = true ;
 
-var npos = 100;
+var npos = 50;
 var x = new Array (npos);
 var y = new Array (npos);
   
