@@ -1,4 +1,4 @@
-let lli;
+// let lli;
 let islooping = true ;
 
 var npos = 50;
@@ -6,7 +6,7 @@ var x = new Array (npos);
 var y = new Array (npos);
   
 function preload() {
-    lli = loadImage('lli_comp.jpg');
+  //  lli = loadImage('lli_comp.jpg');
 }
 
 function setup() {
@@ -19,7 +19,7 @@ function innit() { // initialises the drawing
   //noLoop() ;
   frameCount=0 ;
 
-  image(lli, 0, 0);
+  // image(lli, 0, 0);
   stroke(7,7,7); 
 
 }
@@ -28,7 +28,8 @@ function innit() { // initialises the drawing
 function draw() {
   if (this._loop) { // draws when loop is active
     var size = 50;
-    image(lli, 0, 0);
+ //  image(lli, 0, 0);
+      background(194,122,122);
   
     
   
@@ -89,7 +90,7 @@ ellipse(x-w*0.43, y-w*0.167, w*0.33, w*0.33);
 ellipse(x+w*0.23, y-w*0.167, w*0.33, w*0.33);
 
 //Left green pupils
-fill(27,137,10);
+fill(86, 89, 102);
 ellipse(x-w*0.43, y-w*0.167, w*0.13, w*0.13);
 //Right squinty green pupil
 ellipse(x+w*0.23, y-w*0.167, w*0.27, w*0.046);
